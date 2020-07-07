@@ -20,6 +20,11 @@
   bottom: 3rem;
 }
 
+section {
+  padding: 3rem 0;
+}
+
+/* mobile view */
 @media (min-width: 800px) {
   .intro .container {
     margin-top: 5rem;
@@ -29,5 +34,9 @@
     margin-top: 5rem;
     display: flex;
     justify-content: space-around;
+  }
+
+  section {
+    padding: 1.5rem 0;
   }
 }
