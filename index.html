@@ -1,12 +1,16 @@
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Bohevilla</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Bohevilla</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,31 +20,50 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="#team">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Work with us</a>
+            <a class="nav-link" href="#work">Work with us</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">We strategise, amplify, transform, & develop.</h1>
-        <p class="lead">
-          We are a set of technologists across the globe working to help 
-          awesome causes, projects and brands reach their audience & potential.
+    <section class="jumbotron jumbotron-fluid mb-0 bg-light intro">
+      <div class="container text-center">
+        <h1 class="display-4">We strategise, <br> amplify, transform, & develop.</h1>
+        <p class="lead my-5">
+          We are a set of technologists across the globe working to help
+          awesome causes, projects and brands <br> reach their audience & potential.
         </p>
+        <div class="intro-actions">
+          <a class="btn text-muted d-none d-lg-block" href="#team">
+            More about the team
+          </a>
+          <a class="btn btn-success text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSepoI0Qbt8uDteyFkKXSQLE1aWuoDdMCu2Kx0MD-cLQNH9UkQ/viewform?vc=0&c=0&w=1" target="_blank" rel="noopener noreferrer">
+            Never miss an update
+          </a>
+          <a class="btn text-muted d-none d-lg-block" href="#services">
+            More about our work
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="scroll-down text-center">
+            <a class="text-muted" href="services">Scroll down</a>
+          </div>
+        </div>
+      </div>
+      <div>
       </div>
     </section>
 
-    <section class="py-3">
-      <div class="container">
-        <h2 class="h2">What we do</h2>
+    <section class="py-4" id="services">
+      <div class="container text-center">
+        <h2 class="h2 my-4">What we do</h2>
         
         <div class="row mt-4">
           <div class="col-md-4 text-center p-3">
@@ -84,7 +107,7 @@
           </div>
         </div>
 
-        <div class="text-center my-3">
+        <div class="text-center my-4">
           We are
           <span class="badge badge-pill badge-dark">Creative</span>
           <span class="badge badge-pill badge-dark">Collaborative</span>
@@ -95,102 +118,120 @@
       </div>
     </section>
 
-    <section class="bg-light py-3">
-      <div class="container pb-3">
-        <h2 class="h2 my-3">What we are known for</h2>
-        
-        <h3 class="pt-3 font-weight-light">1. Our Unique Drip & Nurture Campaigning Approach</h3>
-        <h4 class="my-3">48% Increase In Repeat End Goals</h4>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              Drip campaigns are a globally vouched, excellent way to achieve consistent growth and automate time-consuming,
-              demanding, or delicate manual tasks which otherwise could incur mistakes.
-            </p>
+    <section class="bg-dark py-4 text-light text-center">
+      <h2 class="h2 mt-4">What we are known for</h2>
+
+      <div id="knownForCarousel" class="carousel slide mb-4 known-carousel" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <h3 class="pt-3 my-3 font-weight-light">Our Unique Drip & Nurture Campaigning Approach</h3>
+              <p>
+                Drip campaigns are a globally vouched, excellent way to achieve consistent growth and automate
+                time-consuming, demanding, or delicate manual tasks which otherwise could incur mistakes.
+                Bohevilla’s uniquely developed drip and lead nurturing campaigning approach can amplify your campaign.
+              </p>
+              <h4 class="my-3">48% Increase In Repeat End Goals</h4>
+              <button class="btn btn-primary my-3">Talk to us</button>
+            </div>
           </div>
-          <div class="col-md-6">
-            <p>
-              Bohevilla’s uniquely developed drip and lead nurturing campaigning approach can amplify your campaign.
-            </p>
+          <div class="carousel-item">
+            <div class="container">
+              <h3 class="pt-3 my-3 font-weight-light">Operational Analytics & Optimization</h3>
+              <p>
+                We use a holistic approach to improve business operations with proven methodology for sustainable,
+                bottom-line results. A careful process can mitigate costly errors and ensure results for your customers
+                and clients. Let Bohevilla identify your indirect costs, optimise your cost/time trade-off and boost
+                your time & cost ROI today.
+              </p>
+              <h4 class="my-3">Optimising time-cost trade-off</h4>
+              <button class="btn btn-primary my-3">Talk to us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h3 class="pt-3 my-3 font-weight-light">Cause Marketing</h3>
+              <p>
+                We're a group of individuals who are very passionate about supporting initiatives that create positive
+                social impact and we understand the tremendous work you do because we've been in your shoes.
+                Let us help you create powerful campaigns, funnels and resource raising strategies that a cause needs.
+              </p>
+              <h4 class="my-3">Inspire action with Powerful storytelling</h4>
+              <button class="btn btn-primary my-3">Talk to us</button>
+            </div>
           </div>
         </div>
-        <button class="btn btn-primary">Talk to us</button>
-
-
-        <h3 class="pt-3 my-3 font-weight-light">2. Operational Analytics & Optimization</h3>
-        <h4 class="my-3">Optimising time-cost trade-off</h4>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              We use a holistic approach to improve business operations with proven methodology for sustainable, bottom-line results.
-              A careful process can mitigate costly errors and ensure
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              results for your customers and clients. Let Bohevilla identify your indirect costs, optimise your cost/time trade-off
-              and boost your time & cost ROI today.
-            </p>
-          </div>
-        </div>
-        <button class="btn btn-primary">Talk to us</button>
-
-        <h3 class="pt-3 my-3 font-weight-light">3. Cause Marketing</h3>
-        <h4 class="my-3">Inspire action with Powerful storytelling</h4>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              We're a group of individuals who are very passionate about supporting initiatives that create positive social impact and
-              we understand the tremendous work you do because we've been in your shoes.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p>
-              Let us help you create powerful campaigns,
-              funnels and resource raising strategies that a cause needs.
-            </p>
-          </div>
-        </div>
-        <button class="btn btn-primary">Talk to us</button>
+        <a class="carousel-control-prev" href="#knownForCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#knownForCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
 
-    <section class="py-3">
+    <section class="py-4" id="team">
       <div class="container pb-3">
-        <h2 class="h2 my-3">About us</h2>
-        <h3 class="pt-3 font-weight-light">The Team</h3>
-        <p>
-          Bohevilla has a remote-first work culture. We have collaborated across 7 different countries & more than 10 time zones.
-          Bohevilla has worked with some of the most talented software developers, graphic designers, digital marketers, content
-          developers, business analysts and growth hackers across the globe.
-        </p>
-        <p>
-          We’re constantly collaborating with fresh talents who best suit the needs of ongoing projects. Are you one of them?
-          Check out our openings.
-        </p>
-        <p>
-          In case there’s no current vacancy, feel free to drop your resume/portfolio. When something exciting comes up in future
-          which you could be a great fit for, we will reach out to you.
-        </p>
+        <h2 class="h2 my-4 text-center">About us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="pt-3 font-weight-light">The Team</h3>
+            <p>
+              Bohevilla has a remote-first work culture. We have collaborated across 7 different countries & more than 10 time
+              zones.
+              Bohevilla has worked with some of the most talented software developers, graphic designers, digital marketers, content
+              developers, business analysts and growth hackers across the globe.
+            </p>
+            <p>
+              We’re constantly collaborating with fresh talents who best suit the needs of ongoing projects. Are you one of them?
+              Check out our openings.
+            </p>
+            <p>
+              In case there’s no current vacancy, feel free to drop your resume/portfolio. When something exciting comes up in
+              future
+              which you could be a great fit for, we will reach out to you.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="pt-3 font-weight-light">About Bohevilla</h3>
+            <p>
+              Bohevilla started out as a fresh engineering graduate’s experiments to not conform to conventional career structures,
+              job profiles, and expectations; and work instead on whatever she could do to contribute to multiple causes and
+              organisations positively with her experience and skills, while gaining more along the way.
+            </p>
+            <p>
+              Since then, the experiment has translated to become an idiosyncratic company based in India, with more than 10 direct
+              and indirect employees, while working with more than 15 organisations across a broad spectrum of industries and
+              causes.
+              Bohevilla has since been mentored and supported by the eminent Indian startup ecosystems like IIM-A’s CIIE as well as
+              GUSEC.
+            </p>
+          </div>
+        </div>
 
-        <h3 class="pt-3 font-weight-light">About Bohevilla</h3>
-        <p>
-          Bohevilla started out as a fresh engineering graduate’s experiments to not conform to conventional career structures,
-          job profiles, and expectations; and work instead on whatever she could do to contribute to multiple causes and
-          organisations positively with her experience and skills, while gaining more along the way.
-        </p>
-        <p>
-          Since then, the experiment has translated to become an idiosyncratic company based in India, with more than 10 direct
-          and indirect employees, while working with more than 15 organisations across a broad spectrum of industries and causes.
-          Bohevilla has since been mentored and supported by the eminent Indian startup ecosystems like IIM-A’s CIIE as well as
-          GUSEC.
-        </p>
+        <h2 class="h2 my-4 text-center">Work with us</h2>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            I want to work on short term projects
+            <br>
+            <br>
+            <a class="btn btn-primary text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSepoI0Qbt8uDteyFkKXSQLE1aWuoDdMCu2Kx0MD-cLQNH9UkQ/viewform?vc=0&c=0&w=1" target="_blank" rel="noopener noreferrer">Apply here</a>
+          </div>
+          <div class="col-md-6 text-center">
+            I am interested in joining you guys full-time
+            <br>
+            <br>
+            <a class="btn btn-primary text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSepoI0Qbt8uDteyFkKXSQLE1aWuoDdMCu2Kx0MD-cLQNH9UkQ/viewform?vc=0&c=0&w=1" target="_blank" rel="noopener noreferrer">Check Openings</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="bg-light py-3">
+    <section class="bg-light py-4" id="work">
       <div class="container pb-3 text-center">
-        <h2 class="h2 my-3">Let's talk!</h2>
+        <h2 class="h2 my-4">Let's talk!</h2>
         <p>
           We are hiring. Fill out
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSepoI0Qbt8uDteyFkKXSQLE1aWuoDdMCu2Kx0MD-cLQNH9UkQ/viewform?vc=0&c=0&w=1" target="_blank" rel="noopener noreferrer">this</a>
@@ -200,5 +241,12 @@
         <small>© 2020 by Bohevilla Global Trade Private Limited</small>
       </div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+.known-carousel .carousel-item p {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro .container {
+  margin-top: 3rem;
+}
+
+.intro-actions {
+  margin-top: 3rem;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+  .intro .container {
+    margin-top: 5rem;
+  }
+
+  .intro-actions {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+}
