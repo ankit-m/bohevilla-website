@@ -15,11 +15,6 @@
   margin-top: 3rem;
 }
 
-.scroll-down {
-  position: absolute;
-  bottom: 3rem;
-}
-
 section {
   padding: 3rem 0;
 }
@@ -38,6 +33,11 @@ section {
 
   section {
     padding: 1.5rem 0;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 3rem;
   }
 }
 
